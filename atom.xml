@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://HugoHann.github.io</id>
     <title>xhan&apos;s Falcon</title>
-    <updated>2021-01-12T15:52:14.930Z</updated>
+    <updated>2021-02-11T12:44:46.182Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://HugoHann.github.io"/>
     <link rel="self" href="https://HugoHann.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://HugoHann.github.io/images/avatar.png</logo>
     <icon>https://HugoHann.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, xhan&apos;s Falcon</rights>
+    <entry>
+        <title type="html"><![CDATA[PointNet]]></title>
+        <id>https://HugoHann.github.io/post/pointnet/</id>
+        <link href="https://HugoHann.github.io/post/pointnet/">
+        </link>
+        <updated>2021-02-11T12:27:55.000Z</updated>
+        <content type="html"><![CDATA[<p>老规矩，论文地址：<a href="https://arxiv.org/abs/1612.00593">https://arxiv.org/abs/1612.00593</a></p>
+<h1 id="论文目的提出在点云上进行分类和分割任务的深度学习模型pointnet">论文目的：提出在点云上进行分类和分割任务的深度学习模型PointNet。</h1>
+<h2 id="首先什么是点云">首先，什么是点云？</h2>
+<p>点云(Point Cloud）就是想用一定数量的点堆叠成我们想要表示的物体，点云是一种3D表示的信息表示形式。我们的现实世界是三维，所以可以把我们所处的三维空间想象成为一个三维的笛卡尔坐标系，于是每一个点的坐标都有x轴, y轴, z轴三个维度的信息共同表示，同时每个点的颜色信息又有我们所熟知的RGB形式表示，于是表示一个点的坐标和颜色就要用到六个维度的信息。如下图：<br>
+<img src="https://HugoHann.github.io/post-images/1613047415107.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Super-Resolution CNN]]></title>
         <id>https://HugoHann.github.io/post/super-resolution-juan-ji-shen-jing-wang-luo/</id>

@@ -2,23 +2,19 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | xhan&#39;s Falcon</title>
+<title>PointNet | xhan&#39;s Falcon</title>
 <link rel="shortcut icon" href="https://HugoHann.github.io/favicon.ico?v=1613047476443">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://HugoHann.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="关于 | xhan&#39;s Falcon - Atom Feed" href="https://HugoHann.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="PointNet | xhan&#39;s Falcon - Atom Feed" href="https://HugoHann.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="老规矩，论文地址：https://arxiv.org/abs/1612.00593
+论文目的：提出在点云上进行分类和分割任务的深度学习模型PointNet。
+首先，什么是点云？
+点云(Point Cloud）就是想用一定数量的点堆叠成我们想..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -85,11 +81,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              PointNet
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2021-02-11
               </span>
               <span>
                 1 min read
@@ -97,25 +93,22 @@
               
             </div>
             
+              <img class="post-feature-image" src="https://HugoHann.github.io/post-images/pointnet.png" alt="">
+            
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                <p>老规矩，论文地址：<a href="https://arxiv.org/abs/1612.00593">https://arxiv.org/abs/1612.00593</a></p>
+<h1 id="论文目的提出在点云上进行分类和分割任务的深度学习模型pointnet">论文目的：提出在点云上进行分类和分割任务的深度学习模型PointNet。</h1>
+<h2 id="首先什么是点云">首先，什么是点云？</h2>
+<p>点云(Point Cloud）就是想用一定数量的点堆叠成我们想要表示的物体，点云是一种3D表示的信息表示形式。我们的现实世界是三维，所以可以把我们所处的三维空间想象成为一个三维的笛卡尔坐标系，于是每一个点的坐标都有x轴, y轴, z轴三个维度的信息共同表示，同时每个点的颜色信息又有我们所熟知的RGB形式表示，于是表示一个点的坐标和颜色就要用到六个维度的信息。如下图：<br>
+<img src="https://HugoHann.github.io/post-images/1613047415107.jpg" alt="" loading="lazy"></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li>
+<li><a href="#%E8%AE%BA%E6%96%87%E7%9B%AE%E7%9A%84%E6%8F%90%E5%87%BA%E5%9C%A8%E7%82%B9%E4%BA%91%E4%B8%8A%E8%BF%9B%E8%A1%8C%E5%88%86%E7%B1%BB%E5%92%8C%E5%88%86%E5%89%B2%E4%BB%BB%E5%8A%A1%E7%9A%84%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8Bpointnet">论文目的：提出在点云上进行分类和分割任务的深度学习模型PointNet。</a>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li><a href="#%E9%A6%96%E5%85%88%E4%BB%80%E4%B9%88%E6%98%AF%E7%82%B9%E4%BA%91">首先，什么是点云？</a></li>
 </ul>
 </li>
 </ul>
@@ -125,6 +118,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://HugoHann.github.io/post/super-resolution-juan-ji-shen-jing-wang-luo/">
+              <h3 class="post-title">
+                Super-Resolution CNN
+              </h3>
+            </a>
+          </div>
         
 
         
