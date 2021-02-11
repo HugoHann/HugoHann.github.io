@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://HugoHann.github.io</id>
     <title>xhan&apos;s Falcon</title>
-    <updated>2021-02-11T12:51:53.775Z</updated>
+    <updated>2021-02-11T12:55:34.734Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://HugoHann.github.io"/>
     <link rel="self" href="https://HugoHann.github.io/atom.xml"/>
@@ -20,7 +20,7 @@
 <h1 id="论文目的提出在点云上进行分类和分割任务的深度学习模型pointnet">论文目的：提出在点云上进行分类和分割任务的深度学习模型PointNet。</h1>
 <h2 id="首先什么是点云">首先，什么是点云？</h2>
 <p>点云(Point Cloud）就是想用一定数量的点堆叠成我们想要表示的物体，点云是一种3D表示的信息表示形式。我们的现实世界是三维，所以可以把我们所处的三维空间想象成为一个三维的笛卡尔坐标系，于是每一个点的坐标都有x轴, y轴, z轴三个维度的信息共同表示，同时每个点的颜色信息又有我们所熟知的RGB形式表示，于是表示一个点的坐标和颜色就要用到六个维度的信息。如下图：<br>
-<img src="https://HugoHann.github.io/post-images/1613047415107.jpg" alt="" loading="lazy"></p>
+<img src="https://HugoHann.github.io/post-images/1613048127000.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
