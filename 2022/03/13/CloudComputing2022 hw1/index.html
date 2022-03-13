@@ -1,115 +1,248 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-    <!DOCTYPE html>
-<html>
+<html lang="en" data-default-color-scheme=auto>
+
+
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Hanx">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="云计算技术2022 作业一1-1 云使能技术包括哪些技术组件？用一句话简要说明其关键特征宽带网络和Internet架构：Internet以无中心的供给和管理模型为基础，不受任何集中式实体的控制。主要组件是使用网络路由器和交互机的无连接分组交换与基于路由器的互联。 数据中心技术：数据中心是专门的IT基础设施，用于集中存放IT资源，应当可以远程操作，具有高可用性。 虚拟化技术：服务器虚拟化是指利用虚拟">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CloudComputing2022 hw1">
+<meta property="og:url" content="http://example.com/2022/03/13/CloudComputing2022%20hw1/index.html">
+<meta property="og:site_name" content="Hanx">
+<meta property="og:description" content="云计算技术2022 作业一1-1 云使能技术包括哪些技术组件？用一句话简要说明其关键特征宽带网络和Internet架构：Internet以无中心的供给和管理模型为基础，不受任何集中式实体的控制。主要组件是使用网络路由器和交互机的无连接分组交换与基于路由器的互联。 数据中心技术：数据中心是专门的IT基础设施，用于集中存放IT资源，应当可以远程操作，具有高可用性。 虚拟化技术：服务器虚拟化是指利用虚拟">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-13T07:31:01.000Z">
+<meta property="article:modified_time" content="2022-03-13T08:35:38.961Z">
+<meta property="article:author" content="Hanx">
+<meta property="article:tag" content="云计算">
+<meta name="twitter:card" content="summary_large_image">
+  
   
   <title>CloudComputing2022 hw1 - Hanx</title>
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    <link rel='manifest' href='/manifest.json'>
-  
 
-  
-<link rel="stylesheet" href="/css/var.css">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
-  
-<link rel="stylesheet" href="/css/main.css">
 
-  
-<link rel="stylesheet" href="/css/typography.css">
-
-  
-<link rel="stylesheet" href="/css/code-highlighting.css">
-
-  
-<link rel="stylesheet" href="/css/components.css">
-
-  
-<link rel="stylesheet" href="/css/nav.css">
-
-  
-<link rel="stylesheet" href="/css/paginator.css">
-
-  
-<link rel="stylesheet" href="/css/footer.css">
-
-  
-<link rel="stylesheet" href="/css/post-list.css">
-
-  
-<link rel="stylesheet" href="/css/waline.css">
-
-  
-  
-  
-<link rel="stylesheet" href="/css/post.css">
-
-  
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
 
   
     
-<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
- 
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
   
 
   
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head>
-    <body data-color-scheme="auto">
-        <nav id="theme-nav">
-    <div class="inner">
-        <a class="title" href="/">Blog</a>
-        <div class="nav-arrow"></div>
-        <div class="nav-items">
-            <a class="nav-item nav-item-home" href="/">Home</a>
-            
-            
-            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/HugoHann" target="_blank">&nbsp;</a>
-            
-            
-        </div>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
     </div>
+  </div>
 </nav>
-        <article class="post">
-    <div class="meta">
-        
-        <div class="date" id="date">
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="CloudComputing2022 hw1">
+              
+            </span>
+
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-03-13 15:31" pubdate>
+        March 13, 2022 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      690 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      6 分钟
+    </span>
+  
+
+  
+  
+</div>
+
             
-            
-            <span>March</span>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <span>13,</span>
-            <span>2022</span>
+          </div>
+
+          
         </div>
-        
-
-        <h2 class="title">CloudComputing2022 hw1</h2>
+      </div>
     </div>
+  </header>
 
-    <div class="divider"></div>
+  <main>
+    
+      
 
-    <div class="content">
-        <h1 id="云计算技术2022-作业一"><a href="#云计算技术2022-作业一" class="headerlink" title="云计算技术2022 作业一"></a>云计算技术2022 作业一</h1><h1 id="1-1-云使能技术包括哪些技术组件？用一句话简要说明其关键特征"><a href="#1-1-云使能技术包括哪些技术组件？用一句话简要说明其关键特征" class="headerlink" title="1-1 云使能技术包括哪些技术组件？用一句话简要说明其关键特征"></a>1-1 云使能技术包括哪些技术组件？用一句话简要说明其关键特征</h1><h3 id="宽带网络和Internet架构："><a href="#宽带网络和Internet架构：" class="headerlink" title="宽带网络和Internet架构："></a>宽带网络和Internet架构：</h3><p>Internet以无中心的供给和管理模型为基础，不受任何集中式实体的控制。主要组件是使用网络路由器和交互机的无连接分组交换与基于路由器的互联。</p>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">CloudComputing2022 hw1</h1>
+            
+            <div class="markdown-body">
+              <h1 id="云计算技术2022-作业一"><a href="#云计算技术2022-作业一" class="headerlink" title="云计算技术2022 作业一"></a>云计算技术2022 作业一</h1><h1 id="1-1-云使能技术包括哪些技术组件？用一句话简要说明其关键特征"><a href="#1-1-云使能技术包括哪些技术组件？用一句话简要说明其关键特征" class="headerlink" title="1-1 云使能技术包括哪些技术组件？用一句话简要说明其关键特征"></a>1-1 云使能技术包括哪些技术组件？用一句话简要说明其关键特征</h1><h3 id="宽带网络和Internet架构："><a href="#宽带网络和Internet架构：" class="headerlink" title="宽带网络和Internet架构："></a>宽带网络和Internet架构：</h3><p>Internet以无中心的供给和管理模型为基础，不受任何集中式实体的控制。主要组件是使用网络路由器和交互机的无连接分组交换与基于路由器的互联。</p>
 <h3 id="数据中心技术："><a href="#数据中心技术：" class="headerlink" title="数据中心技术："></a>数据中心技术：</h3><p>数据中心是专门的IT基础设施，用于集中存放IT资源，应当可以远程操作，具有高可用性。</p>
 <h3 id="虚拟化技术："><a href="#虚拟化技术：" class="headerlink" title="虚拟化技术："></a>虚拟化技术：</h3><p>服务器虚拟化是指利用虚拟化软件将IT硬件抽象为虚拟服务器，具有硬件无关性，有多种层次的虚拟化技术。</p>
 <h3 id="Web技术："><a href="#Web技术：" class="headerlink" title="Web技术："></a>Web技术：</h3><p>常用语云服务的实现，基本技术包括URL、HTTP、HTML和XML，具有极大灵活性。</p>
@@ -121,69 +254,196 @@
 <h3 id="VMware-ESXi："><a href="#VMware-ESXi：" class="headerlink" title="VMware ESXi："></a>VMware ESXi：</h3><p>VMware 提供的裸机虚拟化系统，不需要宿主系统，可直接运行多个虚拟机，侧重于服务器虚拟化，技术较成熟，功能也多，支持虚机系统多。</p>
 <h3 id="VMware-Workstation："><a href="#VMware-Workstation：" class="headerlink" title="VMware Workstation："></a>VMware Workstation：</h3><p>VMware 提供的个人虚拟化软件，需要在宿主操作系统上运行软件，再于软件上运行虚拟机。</p>
 
-    </div>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/">云计算</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/13/markdown%20doc/">
+                        <span class="hidden-mobile">markdown doc</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-    <div class="about">
-        <h1>About this Post</h1>
-        <p>This post is written by Hanx, licensed under <a
-                href=""></a>.</p>
-    </div>
-
-    
-        
-    
-</article>
-        <footer>
-    <div class="inner">
-        <div class="links">
             
-            <div class="group">
-                <h4 class="title">Blog</h4>
-                
-                <a href="/" class="item">Blog</a>
-                
-            </div>
-            
-            <div class="group">
-                <h4 class="title">Projects</h4>
-                
-            </div>
-            
-            <div class="group">
-                <h4 class="title">Me</h4>
-                
-                <a target="_blank" rel="noopener" href="https://github.com/HugoHann" class="item">GitHub</a>
-                
-                <a href="hhanxux@gmail.com" class="item">Email</a>
-                
-            </div>
-            
+          </article>
         </div>
-        <span>&copy; 2022 Hanx<br >Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></span>
-        
-            <br>
-            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
-                <label>
-                    <input type="radio" value="light">
-                    <span>Light</span>
-                </label>
-                <label>
-                    <input type="radio" value="dark">
-                    <span>Dark</span>
-                </label>
-                <label>
-                    <input type="radio" value="auto">
-                    <span>Auto</span>
-                </label>
-            </div>
-        
+      </div>
     </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
 </footer>
 
 
-        
-<script src="/js/main.js"></script>
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
 
-        
-    </body>
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
 </html>
