@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Hanx">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="hw2：列举并简要说明威胁作用者和云安全威胁。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CloudComputing2022 hw2">
+<meta property="og:url" content="http://example.com/2022/03/20/CloudComputing2022-hw2/index.html">
+<meta property="og:site_name" content="Hanx">
+<meta property="og:description" content="hw2：列举并简要说明威胁作用者和云安全威胁。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/cc.jpg">
+<meta property="article:published_time" content="2022-03-20T11:29:24.000Z">
+<meta property="article:modified_time" content="2022-03-20T12:24:25.861Z">
+<meta property="article:author" content="Hanx">
+<meta property="article:tag" content="Cloud Computing">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/cc.jpg">
+  
+  
+  <title>CloudComputing2022 hw2 - Hanx</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"></head>
+
+
+<body>
+  <header style="height: 80vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Hanx</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-user-fill"></i>
+                Links
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="CloudComputing2022 hw2">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-03-20 19:29" pubdate>
+        March 20, 2022 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.5k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      13 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">CloudComputing2022 hw2</h1>
+            
+            <div class="markdown-body">
+              <h1 id="云计算技术2022-作业二"><a href="#云计算技术2022-作业二" class="headerlink" title="云计算技术2022 作业二"></a>云计算技术2022 作业二</h1><h1 id="2-1-列举威胁作用者有哪些，并简要说明。"><a href="#2-1-列举威胁作用者有哪些，并简要说明。" class="headerlink" title="2-1 列举威胁作用者有哪些，并简要说明。"></a>2-1 列举威胁作用者有哪些，并简要说明。</h1><p>威胁作用者是引发威胁的实体，因为与它能够实施攻击。可能来自内部或外部，可能来自于人或软件程序。如下图所示：<br><img src="/img/e1.png" srcset="/img/loading.gif" lazyload alt="安全策略和安全机制如何用来应对威胁作用者造成的威胁、漏洞和风险" title="Magic Gardens"></p>
+<p>威胁作用者主要包括：</p>
+<h3 id="匿名攻击者"><a href="#匿名攻击者" class="headerlink" title="匿名攻击者"></a>匿名攻击者</h3><p>匿名攻击者是云中没有权限、不被信任的云服务用户。它通常是一个外部软件程序，通过公网发动网络攻击。当匿名攻击者对安全策略和防护所致有限时，这会抑制它们形成有效攻击的能力。匿名攻击者往往诉诸绕过账号或窃取用户证书的手段，同时使用能够确保匿名性或需要大量资源才能被检举的方法。</p>
+<h3 id="恶意服务作用者"><a href="#恶意服务作用者" class="headerlink" title="恶意服务作用者"></a>恶意服务作用者</h3><p>恶意服务作用者能截取并转发云内的网络流量。它通常是带有被损害的或恶意逻辑的服务代理或伪装成服务代理的程序，也有可能是能够远程截取并破坏消息内容的外部程序。</p>
+<h3 id="授信的攻击者"><a href="#授信的攻击者" class="headerlink" title="授信的攻击者"></a>授信的攻击者</h3><p>授信的攻击者又称恶意租户，与同意云环境中的云用户共享IT资源，试图利用合法的证书来把云提供者以及它们共享IT资源的云租户作为攻击目标。授信的攻击者通过滥用合法的证书、挪用敏感和保密的信息，在云的信任边界内部发动攻击，恶意租户也能够使用基于云的IT资源做很多非法之用，包括非法入侵认证薄弱的进程、破解加密、往电子邮件帐号发送垃圾邮件、发起拒绝服务等常见的攻击等。</p>
+<h3 id="恶意的内部人员"><a href="#恶意的内部人员" class="headerlink" title="恶意的内部人员"></a>恶意的内部人员</h3><p>恶意的内部人员是人为的威胁作用者，它们的行为代表云提供者，或者与之有关。他们通常是现任或前任雇员，或是能够访问云提供者资源范围的第三方。这种类型的威胁作用者会带来极大的破坏可能性，因为恶意的内部人员可能拥有访问云用户IT资源的管理特权。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>匿名攻击者是不被信任的威胁作用者，通常试图从云边界的外部进行攻击；<br>恶意服务作用者截取网络通信，试图恶意地使用或篡改数据；<br>授信的攻击者是经过授权的云服务用户，具有合法的证书，他们会使用这些证书来访问基于云的IT资源；<br>恶意的内部人员是试图滥用对云资源范围的访问特权的人。</p>
+<h1 id="2-2-列举云安全威胁有哪些，并简要说明。"><a href="#2-2-列举云安全威胁有哪些，并简要说明。" class="headerlink" title="2-2 列举云安全威胁有哪些，并简要说明。"></a>2-2 列举云安全威胁有哪些，并简要说明。</h1><h3 id="流量窃听-traffic-eavesdropping"><a href="#流量窃听-traffic-eavesdropping" class="headerlink" title="流量窃听(traffic eavesdropping)"></a>流量窃听(traffic eavesdropping)</h3><p>指当数据在传输到云中或在云内部传输时（通常是从云用户到云提供者），被恶意的服务作用者被动的截获，用于非法的信息收集。由于这种攻击被动的性质，其更容易长时间进行而不被发现。</p>
+<h3 id="恶意媒介-malicious-intermediate"><a href="#恶意媒介-malicious-intermediate" class="headerlink" title="恶意媒介(malicious intermediate)"></a>恶意媒介(malicious intermediate)</h3><p>指消息被恶意服务作用者截获并篡改，因此可能会破坏消息的保密性和完整性。它还有可能在把消息转发到目的地之前插入有害数据。</p>
+<h3 id="拒绝服务-DoS"><a href="#拒绝服务-DoS" class="headerlink" title="拒绝服务(DoS)"></a>拒绝服务(DoS)</h3><p>攻击的目标是使IT资源过载至无法正确运行，发起形式包括：<br>云服务上的负载由于伪造的消息或重复的通信请求不正常的增加。网络流量过载，降低了响应性，性能下降。发出多个云服务请求，每个请求都设计成消耗过量的内存和处理资源。</p>
+<h3 id="授权不足"><a href="#授权不足" class="headerlink" title="授权不足"></a>授权不足</h3><p>是指错误的授予了攻击者访问权限，或是授权太广泛，导致攻击者能访问本应该受到保护的IT资源。这种攻击的一种变种称为弱认证，如果用弱密码或共享账户来保护IT资源，就可能导致这种攻击。</p>
+<h3 id="虚拟化攻击"><a href="#虚拟化攻击" class="headerlink" title="虚拟化攻击"></a>虚拟化攻击</h3><p>利用虚拟化平台的漏洞来危害虚拟化平台的保密性、完整性和可用性。</p>
+<h3 id="信任边界重叠"><a href="#信任边界重叠" class="headerlink" title="信任边界重叠"></a>信任边界重叠</h3><p>如果云中的物理IT资源是由不同的云服务共享的，那么这些云服务的信任边界是重叠的，意图损害其他共享同样信任边界的云服务用户或IT资源。</p>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>流量窃听和恶意媒介攻击通常是由截取网络流量的恶意服务作用者实施的；<br>拒绝服务攻击的发生是当目标IT资源由于请求过多而负载过重，这些请求意在使IT资源性能陷入瘫痪或不可用；<br>授权不足攻击是指错误的授予了攻击者访问权限或是授权太宽泛，或是使用了弱密码；<br>虚拟化攻击利用的是虚拟化环境的漏洞，获得了对底层物理硬件未被授权的访问；<br>重叠的信任边界潜藏了一种威胁，攻击者可以利用多个云用户共享的、基于云的IT资源。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/CloudComputing2022/">CloudComputing2022</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Cloud-Computing/">Cloud Computing</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/14/h5py/">
+                        <span class="hidden-mobile">h5py</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
