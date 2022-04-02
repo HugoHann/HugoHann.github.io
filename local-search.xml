@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>OpenStack Installation</title>
+    <link href="/2022/04/02/OpenStack-Installation/"/>
+    <url>/2022/04/02/OpenStack-Installation/</url>
+    
+    <content type="html"><![CDATA[<h1 id="OpenStack安装与部署"><a href="#OpenStack安装与部署" class="headerlink" title="OpenStack安装与部署"></a>OpenStack安装与部署</h1><h2 id="按照官网的安装教程安装：ubuntu-openstack-install。"><a href="#按照官网的安装教程安装：ubuntu-openstack-install。" class="headerlink" title="按照官网的安装教程安装：ubuntu openstack install。"></a>按照官网的安装教程安装：<a href="https://ubuntu.com/openstack/install">ubuntu openstack install</a>。</h2><h3 id="选择Single-node-OpenStack-deployment"><a href="#选择Single-node-OpenStack-deployment" class="headerlink" title="选择Single-node OpenStack deployment"></a>选择Single-node OpenStack deployment</h3><h3 id="MicroStack-‐-OpenStack-in-a-snap-MicroStack-is-a-pure-upstream-OpenStack-distribution-designed-for-small-scale-and-edge-deployments-that-can-be-installed-and-maintained-with-a-minimal-effort"><a href="#MicroStack-‐-OpenStack-in-a-snap-MicroStack-is-a-pure-upstream-OpenStack-distribution-designed-for-small-scale-and-edge-deployments-that-can-be-installed-and-maintained-with-a-minimal-effort" class="headerlink" title="MicroStack ‐ OpenStack in a snap, MicroStack is a pure upstream OpenStack distribution designed for small scale and edge deployments, that can be installed and maintained with a minimal effort."></a>MicroStack ‐ OpenStack in a snap, MicroStack is a pure upstream OpenStack distribution designed for small scale and edge deployments, that can be installed and maintained with a minimal effort.</h3><h3 id="首先安装MicroStack"><a href="#首先安装MicroStack" class="headerlink" title="首先安装MicroStack"></a>首先安装MicroStack</h3><figure class="highlight brainfuck"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">sudo snap install microstack </span>--<span class="hljs-comment">beta</span> --<span class="hljs-comment">devmode</span><br></code></pre></td></tr></table></figure><p>可以看到安装成功，如图<br><img src="/img/openstack/4.png" alt="安装MicroStack"></p><h3 id="然后进行Initialisation"><a href="#然后进行Initialisation" class="headerlink" title="然后进行Initialisation"></a>然后进行Initialisation</h3><p>The initialisation step automatically deploys, configures, and starts OpenStack services. In particular, it will create the database, networks, an image, several flavors, and ICMP/SSH security groups.</p><figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">sudo</span> <span class="hljs-comment">microstack</span> <span class="hljs-comment">init</span> --<span class="hljs-comment">auto</span> --<span class="hljs-comment">control</span><br></code></pre></td></tr></table></figure><p>可以看到初始化完成，如图<br><img src="/img/openstack/5.png" alt="进行Initialisation"></p><h3 id="然后验证OpenStack"><a href="#然后验证OpenStack" class="headerlink" title="然后验证OpenStack"></a>然后验证OpenStack</h3><p>The purpose of the verification step is to confirm that the cloud is in working order and to discover some of the defaults used by MicroStack. Verification will consist of the following actions:</p><p>a,perform various OpenStack queries<br>b,create an instance<br>c,connect to the instance over SSH<br>d,access the cloud dashboard</p><p>首先查看一下信息，如图<br><img src="/img/openstack/3.png" alt="Query OpenStack"></p><p>可以看到现有的project，image和flavor</p><h3 id="然后创建一个实例"><a href="#然后创建一个实例" class="headerlink" title="然后创建一个实例"></a>然后创建一个实例</h3><p>Create an instance<br>MicroStack comes with a convenient instance creation command called microstack launch. It uses the following defaults for its instances:</p><p>keypair ‘microstack’<br>flavor ‘m1.tiny’<br>floating IP address on subnet</p><p>基于cirros镜像创建一个名为cc的实例：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">microstack <span class="hljs-built_in">launch</span> cirros -n cc<br></code></pre></td></tr></table></figure><br>查看实例，如图：<br><img src="/img/openstack/2.png" alt="Create an instance"></p><p>Note:<br>The launch command can be replaced with the traditional microstack.openstack server create command.</p><h3 id="最后连接实例"><a href="#最后连接实例" class="headerlink" title="最后连接实例"></a>最后连接实例</h3><p>Connect to the instance<br>Output from the microstack launch command includes all the information needed to connect to the instance over SSH，如图:<br><img src="/img/openstack/1.png" alt="Connect to the instance"></p><p>Access the cloud dashboard<br>You can log in to the web UI by pointing your browser to the following URL:</p><p>The username is ‘admin’ and the password is obtained in this way:<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">sudo snap get microstack config.credentials.keystone-password<br></code></pre></td></tr></table></figure></p><p>ssh连接，如图：<br><img src="/img/openstack/6.png" alt="SSH Connection"></p><p>Web连接，如图：<br><img src="/img/openstack/6.png" alt="Web Connection1"><br><img src="/img/openstack/7.png" alt="Web Connection2"><br><img src="/img/openstack/8.png" alt="Web Connection3"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Installation</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Installation</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>CloudComputing2022 hw2</title>
     <link href="/2022/03/20/CloudComputing2022-hw2/"/>
     <url>/2022/03/20/CloudComputing2022-hw2/</url>

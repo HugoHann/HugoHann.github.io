@@ -16,23 +16,23 @@
   <meta name="author" content="Hanx">
   <meta name="keywords" content="">
   
-    <meta name="description" content="hw2：列举并简要说明威胁作用者和云安全威胁。">
+    <meta name="description" content="OpenStack installation via MicroStack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CloudComputing2022 hw2">
-<meta property="og:url" content="http://example.com/2022/03/20/CloudComputing2022-hw2/index.html">
+<meta property="og:title" content="OpenStack Installation">
+<meta property="og:url" content="http://example.com/2022/04/02/OpenStack-Installation/index.html">
 <meta property="og:site_name" content="Hanx">
-<meta property="og:description" content="hw2：列举并简要说明威胁作用者和云安全威胁。">
+<meta property="og:description" content="OpenStack installation via MicroStack">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/cc.jpg">
-<meta property="article:published_time" content="2022-03-20T11:29:24.000Z">
-<meta property="article:modified_time" content="2022-03-20T12:28:36.271Z">
+<meta property="article:published_time" content="2022-04-02T08:42:56.000Z">
+<meta property="article:modified_time" content="2022-04-02T08:53:04.106Z">
 <meta property="article:author" content="Hanx">
-<meta property="article:tag" content="Cloud Computing">
+<meta property="article:tag" content="Installation">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/img/cc.jpg">
   
   
-  <title>CloudComputing2022 hw2 - Hanx</title>
+  <title>OpenStack Installation - Hanx</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -182,7 +182,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="CloudComputing2022 hw2">
+            <span class="h2" id="subtitle" title="OpenStack Installation">
               
             </span>
 
@@ -192,8 +192,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-03-20 19:29" pubdate>
-        March 20, 2022 pm
+      <time datetime="2022-04-02 16:42" pubdate>
+        April 2, 2022 pm
       </time>
     </span>
   
@@ -203,7 +203,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.5k 字
+      1.6k 字
     </span>
   
 
@@ -245,23 +245,27 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">CloudComputing2022 hw2</h1>
+            <h1 style="display: none">OpenStack Installation</h1>
             
             <div class="markdown-body">
-              <h1 id="云计算技术2022-作业二"><a href="#云计算技术2022-作业二" class="headerlink" title="云计算技术2022 作业二"></a>云计算技术2022 作业二</h1><h1 id="2-1-列举威胁作用者有哪些，并简要说明。"><a href="#2-1-列举威胁作用者有哪些，并简要说明。" class="headerlink" title="2-1 列举威胁作用者有哪些，并简要说明。"></a>2-1 列举威胁作用者有哪些，并简要说明。</h1><p>威胁作用者是引发威胁的实体，因为与它能够实施攻击。可能来自内部或外部，可能来自于人或软件程序。如下图所示：<br><img src="/img/e1.png" srcset="/img/loading.gif" lazyload alt="threat agent" title="安全策略和安全机制如何用来应对威胁作用者造成的威胁、漏洞和风险"></p>
-<p>威胁作用者主要包括：</p>
-<h3 id="匿名攻击者"><a href="#匿名攻击者" class="headerlink" title="匿名攻击者"></a>匿名攻击者</h3><p>匿名攻击者是云中没有权限、不被信任的云服务用户。它通常是一个外部软件程序，通过公网发动网络攻击。当匿名攻击者对安全策略和防护所致有限时，这会抑制它们形成有效攻击的能力。匿名攻击者往往诉诸绕过账号或窃取用户证书的手段，同时使用能够确保匿名性或需要大量资源才能被检举的方法。</p>
-<h3 id="恶意服务作用者"><a href="#恶意服务作用者" class="headerlink" title="恶意服务作用者"></a>恶意服务作用者</h3><p>恶意服务作用者能截取并转发云内的网络流量。它通常是带有被损害的或恶意逻辑的服务代理或伪装成服务代理的程序，也有可能是能够远程截取并破坏消息内容的外部程序。</p>
-<h3 id="授信的攻击者"><a href="#授信的攻击者" class="headerlink" title="授信的攻击者"></a>授信的攻击者</h3><p>授信的攻击者又称恶意租户，与同意云环境中的云用户共享IT资源，试图利用合法的证书来把云提供者以及它们共享IT资源的云租户作为攻击目标。授信的攻击者通过滥用合法的证书、挪用敏感和保密的信息，在云的信任边界内部发动攻击，恶意租户也能够使用基于云的IT资源做很多非法之用，包括非法入侵认证薄弱的进程、破解加密、往电子邮件帐号发送垃圾邮件、发起拒绝服务等常见的攻击等。</p>
-<h3 id="恶意的内部人员"><a href="#恶意的内部人员" class="headerlink" title="恶意的内部人员"></a>恶意的内部人员</h3><p>恶意的内部人员是人为的威胁作用者，它们的行为代表云提供者，或者与之有关。他们通常是现任或前任雇员，或是能够访问云提供者资源范围的第三方。这种类型的威胁作用者会带来极大的破坏可能性，因为恶意的内部人员可能拥有访问云用户IT资源的管理特权。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>匿名攻击者是不被信任的威胁作用者，通常试图从云边界的外部进行攻击；<br>恶意服务作用者截取网络通信，试图恶意地使用或篡改数据；<br>授信的攻击者是经过授权的云服务用户，具有合法的证书，他们会使用这些证书来访问基于云的IT资源；<br>恶意的内部人员是试图滥用对云资源范围的访问特权的人。</p>
-<h1 id="2-2-列举云安全威胁有哪些，并简要说明。"><a href="#2-2-列举云安全威胁有哪些，并简要说明。" class="headerlink" title="2-2 列举云安全威胁有哪些，并简要说明。"></a>2-2 列举云安全威胁有哪些，并简要说明。</h1><h3 id="流量窃听-traffic-eavesdropping"><a href="#流量窃听-traffic-eavesdropping" class="headerlink" title="流量窃听(traffic eavesdropping)"></a>流量窃听(traffic eavesdropping)</h3><p>指当数据在传输到云中或在云内部传输时（通常是从云用户到云提供者），被恶意的服务作用者被动的截获，用于非法的信息收集。由于这种攻击被动的性质，其更容易长时间进行而不被发现。</p>
-<h3 id="恶意媒介-malicious-intermediate"><a href="#恶意媒介-malicious-intermediate" class="headerlink" title="恶意媒介(malicious intermediate)"></a>恶意媒介(malicious intermediate)</h3><p>指消息被恶意服务作用者截获并篡改，因此可能会破坏消息的保密性和完整性。它还有可能在把消息转发到目的地之前插入有害数据。</p>
-<h3 id="拒绝服务-DoS"><a href="#拒绝服务-DoS" class="headerlink" title="拒绝服务(DoS)"></a>拒绝服务(DoS)</h3><p>攻击的目标是使IT资源过载至无法正确运行，发起形式包括：<br>云服务上的负载由于伪造的消息或重复的通信请求不正常的增加。网络流量过载，降低了响应性，性能下降。发出多个云服务请求，每个请求都设计成消耗过量的内存和处理资源。</p>
-<h3 id="授权不足"><a href="#授权不足" class="headerlink" title="授权不足"></a>授权不足</h3><p>是指错误的授予了攻击者访问权限，或是授权太广泛，导致攻击者能访问本应该受到保护的IT资源。这种攻击的一种变种称为弱认证，如果用弱密码或共享账户来保护IT资源，就可能导致这种攻击。</p>
-<h3 id="虚拟化攻击"><a href="#虚拟化攻击" class="headerlink" title="虚拟化攻击"></a>虚拟化攻击</h3><p>利用虚拟化平台的漏洞来危害虚拟化平台的保密性、完整性和可用性。</p>
-<h3 id="信任边界重叠"><a href="#信任边界重叠" class="headerlink" title="信任边界重叠"></a>信任边界重叠</h3><p>如果云中的物理IT资源是由不同的云服务共享的，那么这些云服务的信任边界是重叠的，意图损害其他共享同样信任边界的云服务用户或IT资源。</p>
-<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>流量窃听和恶意媒介攻击通常是由截取网络流量的恶意服务作用者实施的；<br>拒绝服务攻击的发生是当目标IT资源由于请求过多而负载过重，这些请求意在使IT资源性能陷入瘫痪或不可用；<br>授权不足攻击是指错误的授予了攻击者访问权限或是授权太宽泛，或是使用了弱密码；<br>虚拟化攻击利用的是虚拟化环境的漏洞，获得了对底层物理硬件未被授权的访问；<br>重叠的信任边界潜藏了一种威胁，攻击者可以利用多个云用户共享的、基于云的IT资源。</p>
+              <h1 id="OpenStack安装与部署"><a href="#OpenStack安装与部署" class="headerlink" title="OpenStack安装与部署"></a>OpenStack安装与部署</h1><h2 id="按照官网的安装教程安装：ubuntu-openstack-install。"><a href="#按照官网的安装教程安装：ubuntu-openstack-install。" class="headerlink" title="按照官网的安装教程安装：ubuntu openstack install。"></a>按照官网的安装教程安装：<a target="_blank" rel="noopener" href="https://ubuntu.com/openstack/install">ubuntu openstack install</a>。</h2><h3 id="选择Single-node-OpenStack-deployment"><a href="#选择Single-node-OpenStack-deployment" class="headerlink" title="选择Single-node OpenStack deployment"></a>选择Single-node OpenStack deployment</h3><h3 id="MicroStack-‐-OpenStack-in-a-snap-MicroStack-is-a-pure-upstream-OpenStack-distribution-designed-for-small-scale-and-edge-deployments-that-can-be-installed-and-maintained-with-a-minimal-effort"><a href="#MicroStack-‐-OpenStack-in-a-snap-MicroStack-is-a-pure-upstream-OpenStack-distribution-designed-for-small-scale-and-edge-deployments-that-can-be-installed-and-maintained-with-a-minimal-effort" class="headerlink" title="MicroStack ‐ OpenStack in a snap, MicroStack is a pure upstream OpenStack distribution designed for small scale and edge deployments, that can be installed and maintained with a minimal effort."></a>MicroStack ‐ OpenStack in a snap, MicroStack is a pure upstream OpenStack distribution designed for small scale and edge deployments, that can be installed and maintained with a minimal effort.</h3><h3 id="首先安装MicroStack"><a href="#首先安装MicroStack" class="headerlink" title="首先安装MicroStack"></a>首先安装MicroStack</h3><figure class="highlight brainfuck"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">sudo snap install microstack </span>--<span class="hljs-comment">beta</span> --<span class="hljs-comment">devmode</span><br></code></pre></td></tr></table></figure>
+<p>可以看到安装成功，如图<br><img src="/img/openstack/4.png" srcset="/img/loading.gif" lazyload alt="安装MicroStack"></p>
+<h3 id="然后进行Initialisation"><a href="#然后进行Initialisation" class="headerlink" title="然后进行Initialisation"></a>然后进行Initialisation</h3><p>The initialisation step automatically deploys, configures, and starts OpenStack services. In particular, it will create the database, networks, an image, several flavors, and ICMP/SSH security groups.</p>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">sudo</span> <span class="hljs-comment">microstack</span> <span class="hljs-comment">init</span> --<span class="hljs-comment">auto</span> --<span class="hljs-comment">control</span><br></code></pre></td></tr></table></figure>
+<p>可以看到初始化完成，如图<br><img src="/img/openstack/5.png" srcset="/img/loading.gif" lazyload alt="进行Initialisation"></p>
+<h3 id="然后验证OpenStack"><a href="#然后验证OpenStack" class="headerlink" title="然后验证OpenStack"></a>然后验证OpenStack</h3><p>The purpose of the verification step is to confirm that the cloud is in working order and to discover some of the defaults used by MicroStack. Verification will consist of the following actions:</p>
+<p>a,perform various OpenStack queries<br>b,create an instance<br>c,connect to the instance over SSH<br>d,access the cloud dashboard</p>
+<p>首先查看一下信息，如图<br><img src="/img/openstack/3.png" srcset="/img/loading.gif" lazyload alt="Query OpenStack"></p>
+<p>可以看到现有的project，image和flavor</p>
+<h3 id="然后创建一个实例"><a href="#然后创建一个实例" class="headerlink" title="然后创建一个实例"></a>然后创建一个实例</h3><p>Create an instance<br>MicroStack comes with a convenient instance creation command called microstack launch. It uses the following defaults for its instances:</p>
+<p>keypair ‘microstack’<br>flavor ‘m1.tiny’<br>floating IP address on subnet</p>
+<p>基于cirros镜像创建一个名为cc的实例：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">microstack <span class="hljs-built_in">launch</span> cirros -n cc<br></code></pre></td></tr></table></figure><br>查看实例，如图：<br><img src="/img/openstack/2.png" srcset="/img/loading.gif" lazyload alt="Create an instance"></p>
+<p>Note:<br>The launch command can be replaced with the traditional microstack.openstack server create command.</p>
+<h3 id="最后连接实例"><a href="#最后连接实例" class="headerlink" title="最后连接实例"></a>最后连接实例</h3><p>Connect to the instance<br>Output from the microstack launch command includes all the information needed to connect to the instance over SSH，如图:<br><img src="/img/openstack/1.png" srcset="/img/loading.gif" lazyload alt="Connect to the instance"></p>
+<p>Access the cloud dashboard<br>You can log in to the web UI by pointing your browser to the following URL:</p>
+<p>The username is ‘admin’ and the password is obtained in this way:<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">sudo snap get microstack config.credentials.keystone-password<br></code></pre></td></tr></table></figure></p>
+<p>ssh连接，如图：<br><img src="/img/openstack/6.png" srcset="/img/loading.gif" lazyload alt="SSH Connection"></p>
+<p>Web连接，如图：<br><img src="/img/openstack/6.png" srcset="/img/loading.gif" lazyload alt="Web Connection1"><br><img src="/img/openstack/7.png" srcset="/img/loading.gif" lazyload alt="Web Connection2"><br><img src="/img/openstack/8.png" srcset="/img/loading.gif" lazyload alt="Web Connection3"></p>
 
             </div>
             <hr>
@@ -271,7 +275,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/CloudComputing2022/">CloudComputing2022</a>
+                      <a class="hover-with-bg" href="/categories/Installation/">Installation</a>
                     
                   </div>
                 
@@ -279,7 +283,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Cloud-Computing/">Cloud Computing</a>
+                      <a class="hover-with-bg" href="/tags/Installation/">Installation</a>
                     
                   </div>
                 
@@ -296,18 +300,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/04/02/OpenStack-Installation/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">OpenStack Installation</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/03/14/h5py/">
-                        <span class="hidden-mobile">h5py</span>
+                      <a href="/2022/03/20/CloudComputing2022-hw2/">
+                        <span class="hidden-mobile">CloudComputing2022 hw2</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
